@@ -39,19 +39,19 @@ namespace LessonInterface
             }
             if (mpxCamera <= 0)
             {
-                throw new ArgumentNullException("Mega px of camera must be bigger than 0!");
+                throw new LessThanZeroException("Mega px of camera must be bigger than 0!");
             }
             if (ram <= 0)
             {
-                throw new ArgumentNullException("RAM must be bigger than 0!");
+                throw new LessThanZeroException("RAM must be bigger than 0!");
             }
             if ( hddCapacity <= 0)
             {
-                throw new ArgumentNullException("Capacity of HDD must be bigger than 0!");
+                throw new LessThanZeroException("Capacity of HDD must be bigger than 0!");
             }
             if (price <= 0)
             {
-                throw new ArgumentNullException("Price of laptop must be bigger than 0!");
+                throw new LessThanZeroException("Price of laptop must be bigger than 0!");
             }
             Name = name;
             Model = model;
